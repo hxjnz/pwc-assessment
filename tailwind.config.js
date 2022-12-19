@@ -4,9 +4,13 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
     './app/**/*.{js,ts,jsx,tsx}',
+    "./node_modules/flowbite/**/*.js",
+    "./node_modules/react-tailwindcss-datepicker/dist/index.esm.js"
   ],
+  darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+    },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms'), require('flowbite/plugin')],
 }
